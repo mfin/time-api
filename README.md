@@ -2,7 +2,7 @@
 Simple "return me time for some place" API
 
 ## JSON response
-```
+```JSON
 $ curl ':5000/ljubljana'  # you can throw just about any string at it!
 
 {
