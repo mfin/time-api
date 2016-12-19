@@ -3,7 +3,7 @@ Simple "return me time for some place" API
 
 ## JSON response
 ```JSON
-$ curl ':5000/ljubljana'  # you can throw just about any string at it!
+$ curl 'https://api.mkfs.si/time/ljubljana'  # you can throw just about any string at it!
 
 {
     "full_time": "2016-08-24 21:15:34.927857+02:00", 
