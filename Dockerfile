@@ -1,4 +1,4 @@
-FROM python:3.5.2-alpine
+FROM python:3.6.1-alpine
 MAINTAINER Matjaž Finžgar <matjaz@finzgar.net>
 
 WORKDIR /app
@@ -9,4 +9,4 @@ COPY . /app
 RUN pip install -r /app/requirements.txt
 
 EXPOSE 5000
-CMD [ "python", "time-api.py" ]
+CMD [ "python", "time_api.py" ]
