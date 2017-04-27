@@ -29,7 +29,7 @@ class ReturnTime(Resource):
                 "short_time": short_time,
                 "lat": lat,
                 "lon": lon
-                }
+               }
 
 api.add_resource(ReturnTime, '/<string:location>')
 
