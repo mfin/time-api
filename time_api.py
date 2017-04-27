@@ -9,6 +9,9 @@ from geopy import geocoders
 app = Flask(__name__)
 api = Api(app)
 
+class ReturnNone(Resource):
+    def get(self):
+        return {'noooope': 'Call a location please!'}
 
 class ReturnTime(Resource):
     def get(self, location):
@@ -16,21 +19,22 @@ class ReturnTime(Resource):
         geo_object = g.geocode(location)
 
         if not geo_object:
-            abort(404, message="Location {} is unknown.".format(location))
+            abort(404, message='Location {} is unknown.'.format(location))
 
         place, (lat, lon) = geo_object
         timezone = g.timezone((lat, lon))
         full_time = datetime.now(timezone)
-        short_time = full_time.strftime("%H:%M")
+        short_time = full_time.strftime('%H:%M')
 
-        return {"place": place,
-                "timezone": str(timezone),
-                "full_time": str(full_time),
-                "short_time": short_time,
-                "lat": lat,
-                "lon": lon
+        return {'place': place,
+                'timezone': str(timezone),
+                'full_time': str(full_time),
+                'short_time': short_time,
+                'lat': lat,
+                'lon': lon
                }
 
+api.add_resource(ReturnNone, '/')
 api.add_resource(ReturnTime, '/<string:location>')
 
 if __name__ == '__main__':
