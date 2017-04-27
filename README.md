@@ -1,4 +1,4 @@
-# time-api
+# time-api [![Build Status](https://travis-ci.org/mfin/time-api.svg?branch=master)](https://travis-ci.org/mfin/time-api)
 Simple "return me time for some place" API
 
 ## JSON response
