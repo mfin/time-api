@@ -8,6 +8,6 @@ deploy:
   provider: heroku
   api_key:
     secure: eG6l75xzbEtrET9b3U+XHZPNioAzhUwBt0P67tCdBY0PBqir9eXJe/BhnHGvOZAKkKTQGqYvmeOx/FYqbjWXZ8odwCJJKkPfeAKjsLcftgETrFYJqdJpA2ZigIXWr2mIKCqHk+OMnu3VEsq5Rt2mPeb0SKodiKe+NWgCLCQJYsI7JZ/vRMT2UPuwO9pguKg2nsLuW+6DA7be8u64b7Vpe64N3SJPOnJ+OFr+wo+4JV+XticzOv+0wRArfSUrL7vgzcBCVHLNEcH6ckXjIY8JNzBC4H0Kt+zApUOLYED98wIE8jRUPvfxjte9a8wj3QdI0i+yAVhDPC9ttTocyaSPwHvPf/GtvHKD6KWwdkmbH3/FUDmxL+4yS8VsSoquh7zl4++lnCwmurPt36M/58wFP8ZZYUowUm5qy+exDbuS5fze/vguCX3EfHpZS3i86z4YB61T86uvgMSrmb558Cp8Crx2etD6Hqgo2RNYgr8J/OkfIyKXpq356hqaT7qF9RRjuPpA79anHWJ0eyGMWqjDqwGc79w0OeAZZe+HpIrGQnjTDtsJuSuXl8hU7ookaYG+uceK8Ye28g+329oNts9nyQdmC+yWw9eTqnIa2atpE89NyG6VN0ralcIMLERuYSLC7aQF6Uslot1WML4jb/f8IeYXcKKoUU0r4ik4SN14FT0=
-  app: time-api
+  app: simple-time-api
   on:
     repo: mfin/time-api
