@@ -9,4 +9,4 @@ COPY . /app
 RUN pip install -r /app/requirements.txt
 
 EXPOSE 5000
-CMD [ "python", "time_api.py" ]
+ENTRYPOINT ["gunicorn", "-b", ":5000", "time_api:app"]
