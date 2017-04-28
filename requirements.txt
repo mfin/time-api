@@ -2,3 +2,4 @@ pytz
 geopy
 flask-restful
 pytest
+gunicorn

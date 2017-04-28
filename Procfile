@@ -1,0 +1,1 @@
+web: gunicorn time_api:app --log-file=-
